@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start:ui": "pnpm --filter ui run start",
+    "start:auth": "pnpm --filter auth run start",
+    "start:host": "pnpm --filter host run start",
+    "start:all": "./start-all.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
