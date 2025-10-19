@@ -12,12 +12,14 @@ export default defineConfig({
       remotes: {
         auth: "http://localhost:5001/assets/remoteEntry.js",
         ui: "http://localhost:5002/assets/remoteEntry.js",
+        sidebar: "http://localhost:5003/assets/remoteEntry.js",
+        dashboard: "http://localhost:5004/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   server: {
-    port: 5000,
+    port: 5050,
     strictPort: true,
   },
 });

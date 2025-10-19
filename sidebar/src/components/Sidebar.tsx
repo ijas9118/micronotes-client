@@ -7,6 +7,8 @@ import {
 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
+import "../index.css";
+
 const links = [
   { to: "/dashboard", label: "Dashboard", icon: <LayoutDashboard /> },
   { to: "/notes", label: "Notes", icon: <NotebookPen /> },

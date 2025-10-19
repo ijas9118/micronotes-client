@@ -8,10 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     federation({
-      name: "host",
-      remotes: {
-        auth: "http://localhost:5001/assets/remoteEntry.js",
-        ui: "http://localhost:5002/assets/remoteEntry.js",
+      name: "sidebar",
+      exposes: {
+        "./Sidebar": "./src/components/Sidebar.tsx",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
