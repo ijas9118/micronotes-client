@@ -8,6 +8,8 @@ const Dashboard = lazy(() => import("dashboard/Dashboard"));
 const Notes = lazy(() => import("notes/Notes"));
 const Tags = lazy(() => import("notes/Tags"));
 const Archived = lazy(() => import("notes/Archived"));
+const Profile = lazy(() => import("profile/Profile"));
+const Settings = lazy(() => import("profile/Settings"));
 
 const router = createBrowserRouter([
   {
@@ -26,8 +28,8 @@ const router = createBrowserRouter([
       { path: "notes", element: <Notes /> },
       { path: "tags", element: <Tags /> },
       { path: "archived", element: <Archived /> },
-      { path: "settings", element: <div>Settings page</div> },
-      { path: "profile", element: <div>Profile page</div> },
+      { path: "settings", element: <Settings /> },
+      { path: "profile", element: <Profile /> },
     ],
   },
 ]);

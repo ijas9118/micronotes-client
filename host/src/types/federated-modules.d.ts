@@ -38,3 +38,11 @@ declare module "notes/Archived" {
   const Archived: React.ComponentType;
   export default Archived;
 }
+declare module "profile/Profile" {
+  const Profile: React.ComponentType;
+  export default Profile;
+}
+declare module "profile/Settings" {
+  const Settings: React.ComponentType;
+  export default Settings;
+}

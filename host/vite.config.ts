@@ -15,6 +15,7 @@ export default defineConfig({
         sidebar: "http://localhost:5003/assets/remoteEntry.js",
         dashboard: "http://localhost:5004/assets/remoteEntry.js",
         notes: "http://localhost:5005/assets/remoteEntry.js",
+        profile: "http://localhost:5006/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),

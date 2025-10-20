@@ -8,15 +8,3 @@ declare module "ui/Button" {
   const Button: React.FC<ButtonProps>;
   export default Button;
 }
-
-declare module "ui/Input" {
-  import { InputHTMLAttributes } from "react";
-
-  export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-    label?: string;
-    error?: string;
-  }
-
-  const Input: React.FC<InputProps>;
-  export default Input;
-}

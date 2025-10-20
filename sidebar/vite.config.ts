@@ -12,6 +12,9 @@ export default defineConfig({
       exposes: {
         "./Sidebar": "./src/components/Sidebar.tsx",
       },
+      remotes: {
+        ui: "http://localhost:5002/assets/remoteEntry.js",
+      },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
