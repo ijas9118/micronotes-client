@@ -23,3 +23,18 @@ declare module "dashboard/Dashboard" {
   const Dashboard: React.ComponentType;
   export default Dashboard;
 }
+
+declare module "notes/Notes" {
+  const Notes: React.ComponentType;
+  export default Notes;
+}
+
+declare module "notes/Tags" {
+  const Tags: React.ComponentType;
+  export default Tags;
+}
+
+declare module "notes/Archived" {
+  const Archived: React.ComponentType;
+  export default Archived;
+}

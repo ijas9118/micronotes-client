@@ -1,4 +1,5 @@
 import {
+  Archive,
   LayoutDashboard,
   NotebookPen,
   Settings,
@@ -13,6 +14,7 @@ const links = [
   { to: "/dashboard", label: "Dashboard", icon: <LayoutDashboard /> },
   { to: "/notes", label: "Notes", icon: <NotebookPen /> },
   { to: "/tags", label: "Tags", icon: <Tags /> },
+  { to: "/archived", label: "Archive", icon: <Archive /> },
   { to: "/settings", label: "Settings", icon: <Settings /> },
   { to: "/profile", label: "Profile", icon: <User /> },
 ];

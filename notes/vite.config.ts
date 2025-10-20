@@ -8,9 +8,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
     federation({
-      name: "dashboard",
+      name: "notes",
       exposes: {
-        "./Dashboard": "./src/components/DashboardGrid.tsx",
+        "./Notes": "./src/pages/NotesPage.tsx",
+        "./Tags": "./src/pages/TagsPage.tsx",
+        "./Archived": "./src/pages/ArchivedPage.tsx",
       },
       shared: {
         "react": {
@@ -24,14 +26,11 @@ export default defineConfig({
         "react-router-dom": {
           singleton: true,
         },
-        "recharts": {
-          singleton: true,
-        },
       },
     }),
   ],
   server: {
-    port: 5004,
+    port: 5005,
     strictPort: true,
   },
 });

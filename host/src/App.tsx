@@ -5,6 +5,9 @@ import DashboardLayout from "./layouts/DashboardLayout";
 
 const Auth = lazy(() => import("auth/routes"));
 const Dashboard = lazy(() => import("dashboard/Dashboard"));
+const Notes = lazy(() => import("notes/Notes"));
+const Tags = lazy(() => import("notes/Tags"));
+const Archived = lazy(() => import("notes/Archived"));
 
 const router = createBrowserRouter([
   {
@@ -20,8 +23,9 @@ const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       { path: "dashboard", element: <Dashboard /> },
-      { path: "notes", element: <div>Notes page</div> },
-      { path: "tags", element: <div>Tags page</div> },
+      { path: "notes", element: <Notes /> },
+      { path: "tags", element: <Tags /> },
+      { path: "archived", element: <Archived /> },
       { path: "settings", element: <div>Settings page</div> },
       { path: "profile", element: <div>Profile page</div> },
     ],
